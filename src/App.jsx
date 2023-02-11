@@ -1,10 +1,10 @@
-import React from "react";
+import { React } from "react";
 import Row from "./Components/Row";
 import requests from "./request";
 import Header from "./Components/Header/Header";
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto bg-[#111] ">
       <Header />
       <Row
         title="Netflix Originals"

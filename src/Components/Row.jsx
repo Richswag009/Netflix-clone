@@ -8,7 +8,7 @@ function Row({ title, fetchURL, isLargeRow }) {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(fetchURL);
-      console.log(response.data.results);
+      // console.log(response.data.results);
       setMovies(response.data.results);
       return response;
     };
@@ -17,7 +17,7 @@ function Row({ title, fetchURL, isLargeRow }) {
   }, [fetchURL]);
   return (
     <div className="container mx-auto px-10">
-      <h2 className="text-2xl text-white capitalize">{title}</h2>
+      <h2 className="text-2xl text-white font-semibold  capitalize">{title}</h2>
 
       {/* container ->*/}
       <div className="p-8 container-snap scroll-smooth overflow-x-scroll overflow-y-none mx-auto space-x-2 flex ">
